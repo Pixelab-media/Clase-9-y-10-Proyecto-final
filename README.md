@@ -67,7 +67,7 @@ Debajo de eso, deberán mostrarse 5 card de Perros.
 
 [-] Crear todas las rutas.
 
-[-] Crear la Card, el componente producto.
+[-] Crear la Card, el componente Perro.
 
 [-] Crear el Home la Navbar.
 
