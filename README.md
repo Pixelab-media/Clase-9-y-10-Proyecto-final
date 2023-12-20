@@ -12,13 +12,21 @@
 [-] para las imagenes: https://cdn2.thedogapi.com/images/{reference_image_id}.jpg ejemplo: https://cdn2.thedogapi.com/images/BJa4kxc4X.jpg
 
 (-) Temas a abordar:
+
 [-]Renderización de componentes
+
 [-]Renderizado condicional
+
 [-]Estados
+
 [-]UseEffect
+
 [-]Formularios
+
 [-]Enrutamiento
+
 [-]Context
+
 
 (-) Estilos: usar una de las formas vistas en clase pero ser coherente en todo el código, en la forma de poner estilos, los framework utilizados (si usan) y el lugar del código donde lo van a colocar.
 
