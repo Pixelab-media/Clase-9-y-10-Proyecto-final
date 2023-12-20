@@ -1,5 +1,16 @@
 ***Trabajo Final***
 
+**Recordatorio Github**
+git clone (Para clonar)
+
+git add (subir a git)
+
+git commit -m(mensaje)
+
+git push (subir a github)
+
+git pull (bajarme los cambios de github)
+
 *Este trabajo comenzará en clase porque será un resumen de todo el curso, y si no se culmina en clase, deberán presentarlo con posterioridad.*
 
 (-) Mientras en clase lo vayan haciendo yo iré repasando los temas según el avance del código y que tanto recuerden el tema.
