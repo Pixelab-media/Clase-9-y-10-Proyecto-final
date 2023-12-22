@@ -12,14 +12,19 @@ Debajo de eso, deberán mostrarse 5 card de Perros.
 */
 import { useEffect } from "react";
 import Card from "../components/Card";
-import { useState } from "react";
+import { useState,useContext } from "react";
+import { DogContext } from "../context/DogContext";
+import { useNavigate,Link } from "react-router-dom";
 
 
 
 const Home=()=>{
 
     const [dogsfive,setDogsfive]=useState([])
-    //const dogsfive=[];
+    const { nomUser,activeUser } = useContext(DogContext);
+    const navigate=useNavigate()
+    
+    //const [Favoritos,setFavoritos]=useState([1,2,3])
 
     useEffect(() => {
 
@@ -28,18 +33,7 @@ const Home=()=>{
             const allDogs = await api.json();
 
             setDogsfive(allDogs.slice(0,5));
-            console.log(dogsfive);
-            //setCharacters(characterApi.results);
-            //console.log(allDogs);
-            //setDogsfive()
-            /*
-            for (let i = 0; i < 5; i++) {
-               // dogsfive.push(allDogs[i]);
-               setDogsfive([allDogs[i]])
-                
-            }
-            console.log(dogsfive)
-            */
+           // console.log(dogsfive);
           };
     
           reqApi();
@@ -47,18 +41,31 @@ const Home=()=>{
         
     }, []);
 
+    
+
     return(
         <>
-            <h1>hola bienvenido</h1>
-            <section>
+            {activeUser ? ( 
+            
+                    <h1>Bienvenido {nomUser}</h1> 
+                ): (
+                    <div className="container-sesion-home">
+                        <Link to={"/formulario"}>
+                        <h2>Iniciar Sesión</h2>
+                        </Link>
+                    </div>
+                )
+            }
+            
+            <div className="container-dogs">
                 { dogsfive.map ( d =>
 
-                    <div key={d.id}>
-                        <Card raza={d.name} origen={d.origin} img={d.reference_image_id} vidaUtil={d.life_span}/>
+                    <div className="card" key={d.id}  >
+                        <Card raza={d.name} origen={d.origin} img={d.reference_image_id} vidaUtil={d.life_span} perro={d}/>
                     </div>
 
                 )}  
-            </section>
+            </div>
           
 
             
