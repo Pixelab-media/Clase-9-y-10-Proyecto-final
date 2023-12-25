@@ -1,6 +1,7 @@
 import { useContext, useState} from "react";
 import { DogContext } from "../context/DogContext";
 import { useNavigate } from "react-router-dom"
+import { PiUserCircleLight } from "react-icons/pi";
 
 const Formulario=()=>{
 
@@ -43,11 +44,19 @@ const Formulario=()=>{
     }
 
     return(
-        <form onSubmit={handleSubmit}>
-            <input type="text" onChange={handleChange}  name="nombre" value={datosFormulario.nombre} />
-            {error.nombre && <h4>{error.nombre}</h4>}
-            <button type="submit">Enviar</button>
-        </form>
+        <div className="container-form">
+            
+                <form  onSubmit={handleSubmit}>
+                    <div className="container-icon">
+                        <PiUserCircleLight className="icon-login" />
+                    </div>
+                    <h3>Username</h3>
+                    <input type="text" onChange={handleChange}  name="nombre" value={datosFormulario.nombre} />
+                    {error.nombre && <h4>{error.nombre}</h4>}
+                    <button type="submit" className="button-form">Iniciar sesion</button>
+                </form>
+            
+        </div>
 
 
     )

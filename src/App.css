@@ -234,3 +234,86 @@ footer{
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none; /* Elimina el subrayado */
 }
+
+.container-form{
+    display: flex;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    padding-bottom: 200px;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    margin-top: 100px;
+    border: 10px;
+    color: #ffffff;
+    
+}
+
+.form-content{
+    
+
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    max-width: 600px;
+    border: 5px;
+    border-radius: 15px 15px 15px 15px;
+    color: #0f0e0e;
+    border-color: #0f0e0e;
+
+}
+
+form {
+    border: 2px solid #ccc; /* Color y grosor del borde */
+    padding: 30px; /* Espaciado interno */
+    width: 600px; /* Ancho del formulario */
+    box-sizing: border-box; /* Incluye el grosor del borde en el ancho total */
+    border-radius: 15px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    /*
+    background-image: linear-gradient(225deg, #ffffc3 0, #f3ffc4 6.25%, #e2ffc4 12.5%, #cfffc6 18.75%, #baffc8 25%, #a1ffca 31.25%, #84ffce 37.5%, #5fffd2 43.75%, #10f8d7 50%, #00f1dd 56.25%, #00eae6 62.5%, #00e4ef 68.75%, #00def9 75%, #00d8ff 81.25%, #00d3ff 87.5%, #00cdff 93.75%, #00c8ff 100%);
+    */
+    background-image: linear-gradient(225deg, #ccd8a1 0, #c0d7a0 6.25%, #b3d59f 12.5%, #a4d39e 18.75%, #93d09e 25%, #7fcc9e 31.25%, #68c79e 37.5%, #4ac1a0 43.75%, #0bbba2 50%, #00b4a5 56.25%, #00aeab 62.5%, #00a8b1 68.75%, #00a2b8 75%, #009dc0 81.25%, #0098c8 87.5%, #0094cf 93.75%, #008fd6 100%);
+}
+
+input {
+    width: 100%; /* El input ocupa el 100% del ancho del contenedor (formulario) */
+    padding: 10px; /* Espaciado interno del input */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    margin-bottom: 10px; /* Espacio inferior entre inputs, ajusta según tus preferencias */
+    border-radius: 15px 15px 15px 15px; 
+    font-size: 20px;
+    border: none;
+}
+
+.button-form {
+    background-color: #3db8c0;
+    color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px 15px 15px 15px; 
+    border: none;
+    cursor: pointer;
+    
+}
+.button-form:hover {
+    background-color: #10ada6;
+}
+
+.icon-login{
+    font-size: 200px;
+    /*width: 50px;*/
+    color: #ffffff;
+    display: flex;
+   
+    
+}
+.container-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}

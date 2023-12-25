@@ -29,7 +29,7 @@ const Favoritos=()=>{
 
     return(
         <div>
-            <h1>favoritos</h1>
+            {/* <h1>favoritos</h1> */}
             <div className="container-dogs">
                     { dogsfavorites.map ( d =>
 
