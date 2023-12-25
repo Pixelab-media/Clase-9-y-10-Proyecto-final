@@ -41,18 +41,21 @@ const Home=()=>{
         
     }, []);
 
-    
+    const handleClick = () => {    
+        navigate("/formulario")
+    };
 
     return(
         <>
             {activeUser ? ( 
-            
-                    <h1>Bienvenido {nomUser}</h1> 
+                    <div>
+                        <label className="user-logged">
+                            Bienvenido {nomUser} 
+                        </label>
+                    </div>
                 ): (
-                    <div className="container-sesion-home">
-                        <Link to={"/formulario"}>
-                        <h2>Iniciar Sesión</h2>
-                        </Link>
+                    <div>
+                        <button className="button-sesion" onClick={handleClick}><h4>Iniciar Sesion</h4></button>
                     </div>
                 )
             }

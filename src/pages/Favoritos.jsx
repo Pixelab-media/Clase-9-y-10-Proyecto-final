@@ -28,19 +28,19 @@ const Favoritos=()=>{
     }, [favoritos]);
 
     return(
-        <>
-        <h1>favoritos</h1>
-        <div className="container-dogs-twenty">
-                { dogsfavorites.map ( d =>
+        <div>
+            <h1>favoritos</h1>
+            <div className="container-dogs-favorites">
+                    { dogsfavorites.map ( d =>
 
-                    <div className="card" key={d.id} >
-                        <Card raza={d.name} origen={d.origin} img={d.reference_image_id} vidaUtil={d.life_span} perro={d}/>
-                    </div>
+                        <div className="card" key={d.id} >
+                            <Card raza={d.name} origen={d.origin} img={d.reference_image_id} vidaUtil={d.life_span} perro={d}/>
+                        </div>
 
-                )}  
-        </div>
+                    )}  
+            </div>
         
-        </>
+        </div>
 
 
     )

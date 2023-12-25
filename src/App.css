@@ -8,7 +8,15 @@ body {
       "Droid Sans", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
+    background-color: #f2f2f2;
+
+    position: relative;
+    min-height: 100vh;
+    
+}
+main {
+    padding-bottom: 60px; /* Ajusta el espacio en la parte inferior para que el footer no se superponga al contenido */
+}
 
 nav{
     background-color: #ff7411;
@@ -47,8 +55,12 @@ footer{
     height: 170px;
     justify-content: space-around;
     padding: 10px;
-    /*position: absolute;*/
-    /*bottom: 0;*/
+   /* position: absolute;
+    bottom: 0cqmin;*/
+    position: absolute;
+    bottom: 0;
+    
+    
 }
 .alumnos {
     margin-top: 20px;
@@ -85,18 +97,14 @@ footer{
     
 }
 .card {
-    border: 1px solid #ccc;;
+    border: 0px solid #ccc;;
     /*padding: 0px;*/
     margin: 25px;
-    border-radius: 10px 10px 10px 10px;
-    /*font-family: "Arial";*/
-    /*font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-      "Droid Sans", "Helvetica Neue", sans-serif;*/
+    border-radius: 15px 15px 15px 15px;
     color: #8c7c71;
-
     /*transition: transform 0.3s ease-in-out; *//* transición suave para el efecto de zoom */
     transition: transform 0.3s ease-in-out, cursor 0.3s ease; /* Agrega la transición para el cursor */
-    cursor: pointer; /* Cambia el cursor a una mano por defecto */
+    
 }
 
 .card h3{
@@ -112,10 +120,7 @@ footer{
     max-width: 100%; /* La imagen no será más ancha que su contenedor */
     width: 400px;
     height: 300px; 
-
-    /*width: 100%;*/
-    /*height: 100%;*/
-    object-fit: cover;
+    object-fit: cover; /* Mantiene la proporción y cubre completamente el contenedor */
     border-radius: 10px 10px 0 0;
 }
 
@@ -123,30 +128,80 @@ footer{
     display: grid;
     grid-template-columns: auto auto auto;
     width: 100%;
-    padding-bottom: 50px;
+    padding-bottom: 200px;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    margin-top: 50px;
+}
+.container-dogs-favorites {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    padding-bottom: 200px;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    margin-top: 50px;
+}
+
+
+
+.card-info{
+    padding: 10px;
+    background-color: #fff8fa;
+    border-radius: 0px 0px 15px 15px;
+    margin-top: 0%;
+}
+
+.container-buttons-card{
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
-.card-twenty{
-/*
-  display: flex;
-  background: #3c3e44;
-  margin: 20px 10px;
-  border-radius: 10px;
-  align-items: flex-start;
-  border: 1px solid #ccc;
-*/
-  border: 1px solid #ccc;;
-    /*padding: 0px;*/
-    margin: 25px;
-    border-radius: 10px 10px 10px 10px;
-    /*font-family: "Arial";*/
-    /*font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-      "Droid Sans", "Helvetica Neue", sans-serif;*/
-    color: #8c7c71;
-
-    /*transition: transform 0.3s ease-in-out; *//* transición suave para el efecto de zoom */
-    transition: transform 0.3s ease-in-out, cursor 0.3s ease; /* Agrega la transición para el cursor */
+.button-detail{
+    border: none;
+    color: #10ada6;
+    background-color: #fff8fa;
     cursor: pointer; /* Cambia el cursor a una mano por defecto */
-
-
+    margin-top: 10px;
+}
+.button-favorite{
+    border: none;
+    /*color: #10ada6;*/
+    background-color: #fff8fa;
+    cursor: pointer; /* Cambia el cursor a una mano por defecto */
+    margin-top: 10px;
+}
+.button-sesion {
+    background-color: #3db8c0;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgb(27 169 76 / 50%);
+    font-size: 20.005px;
+    padding-left: 1.528em;
+    padding-right: 1.528em;
+    padding-top: 0px;
+    padding-bottom: 0;
+    min-height: 2.778em;
+    border: none;
+    cursor: pointer;
+    text-decoration: none; /* Elimina el subrayado */
+    margin-top: 10px;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+.button-sesion:hover {
+    background-color: #10ada6;
+}
+.user-logged{
+    width: 100%;
+    display: flex;
+    background-color: #d87e37;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(169, 98, 27, 0.5);
+    font-size: 20px;
+    padding-left: 1.528em;
+    /*padding-right: 1.528em;*/
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none; /* Elimina el subrayado */
 }
