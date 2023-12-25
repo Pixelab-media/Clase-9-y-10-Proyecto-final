@@ -60,7 +60,7 @@ const Home=()=>{
                 )
             }
             
-            <div className="container-dogs">
+            <div className="container-five-dogs">
                 { dogsfive.map ( d =>
 
                     <div className="card" key={d.id}  >

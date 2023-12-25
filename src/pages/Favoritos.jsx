@@ -30,7 +30,7 @@ const Favoritos=()=>{
     return(
         <div>
             <h1>favoritos</h1>
-            <div className="container-dogs-favorites">
+            <div className="container-dogs">
                     { dogsfavorites.map ( d =>
 
                         <div className="card" key={d.id} >

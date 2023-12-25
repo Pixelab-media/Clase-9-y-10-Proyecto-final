@@ -89,7 +89,7 @@ footer{
   
 }
 
-.container-dogs{
+.container-five-dogs{
     display: flex;
     justify-content: space-between; /* Distribuye las cards uniformemente en el contenedor */
     margin-top: 50px;
@@ -106,6 +106,7 @@ footer{
     transition: transform 0.3s ease-in-out, cursor 0.3s ease; /* Agrega la transición para el cursor */
     
 }
+
 
 .card h3{
     margin-left: 10px;
@@ -124,6 +125,24 @@ footer{
     border-radius: 10px 10px 0 0;
 }
 
+.card-details{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    max-width: 600px;
+    border: 0px;
+    border-radius: 15px 15px 15px 15px;
+    color: #8c7c71;
+}
+.img-card-details {
+    
+    max-width: 100%; /* La imagen no será más ancha que su contenedor */
+    /*width: 400px;*/
+    height: 400px; 
+    object-fit: cover; /* Mantiene la proporción y cubre completamente el contenedor */
+    border-radius: 10px 10px 0 0;
+}
+
 .container-dogs-twenty {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -135,6 +154,16 @@ footer{
     margin-top: 50px;
 }
 .container-dogs-favorites {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    padding-bottom: 200px;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    margin-top: 50px;
+}
+.container-dogs {
     display: grid;
     grid-template-columns: auto auto auto;
     width: 100%;

@@ -21,7 +21,7 @@ const Perros=()=>{
     }, []);
 
     return(
-        <div className="container-dogs-twenty">
+        <div className="container-dogs">
         { dogsTwenty.map ( d =>
 
             <div className="card" key={d.id} >
