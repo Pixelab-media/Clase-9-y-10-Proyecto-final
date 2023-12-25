@@ -17,7 +17,7 @@ const Formulario=()=>{
         e.preventDefault()
         let errores = {...estadoInicial}
         Object.keys(datosFormulario).map(key=> {
-            if(datosFormulario[key]==""){
+            if(datosFormulario[key].trim()==""){
                 errores = {
                     ...errores,
                     [key]: `Rellene el campo ${key}`}

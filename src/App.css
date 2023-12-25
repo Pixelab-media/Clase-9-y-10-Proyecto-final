@@ -32,19 +32,26 @@ nav{
     font-family: "Homer Simpson UI";
     
 }
-.nav-item {
+.nav-item-desactiva {
    margin: 30px 10px; /* Añade espacio entre los enlaces */
     /*text-align: center;*/
     color:white;
     font-family: "Homer Simpson UI";
     text-decoration: none; /* Elimina el subrayado */
-    /*text-align: center;*/
-    /*margin-left: 200px;*/
 }
-.nav-item:hover {
+.nav-item-desactiva:hover {
     /* Cambia el color del texto al pasar el ratón sobre el enlace (opcional) */
     color: #00c0eb; /* Puedes ajustar el color según tus preferencias */
-  }
+}
+
+.nav-item-activa {
+    margin: 30px 10px; /* Añade espacio entre los enlaces */
+     /*text-align: center;*/
+     color:#00c0eb;
+     font-family: "Homer Simpson UI";
+     text-decoration: none; /* Elimina el subrayado */
+
+ }
 
 footer{
     background-color: #ff7411;
@@ -102,7 +109,6 @@ footer{
     margin: 25px;
     border-radius: 15px 15px 15px 15px;
     color: #8c7c71;
-    /*transition: transform 0.3s ease-in-out; *//* transición suave para el efecto de zoom */
     transition: transform 0.3s ease-in-out, cursor 0.3s ease; /* Agrega la transición para el cursor */
     
 }
