@@ -323,3 +323,24 @@ input {
     align-items: center;
     max-width: 100%;
 }
+.container-page-notfound{
+    display: flex;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    padding-bottom: 200px;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    margin-top: 100px;
+    border: 10px;
+    color: rgba(21, 19, 19, 0.655);
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+.icon-not-found{
+    font-size: 200px;
+    color: rgba(21, 19, 19, 0.655);
+    display: flex;
+    margin-bottom: 50px;
+}

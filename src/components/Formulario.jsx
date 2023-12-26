@@ -50,7 +50,7 @@ const Formulario=()=>{
                     <div className="container-icon">
                         <PiUserCircleLight className="icon-login" />
                     </div>
-                    <h3>Username</h3>
+                    <h3>Usuario</h3>
                     <input type="text" onChange={handleChange}  name="nombre" value={datosFormulario.nombre} />
                     {error.nombre && <h4>{error.nombre}</h4>}
                     <button type="submit" className="button-form">Iniciar sesion</button>
